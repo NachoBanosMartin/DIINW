@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        body {        
+        padding: 20px;
+        border: 1px solid #ddd;
+        display: flex;   /*Coloca un contenedor al lado del otro, sino el 2º estaría debajo*/
+        justify-content: space-between; /* Coloca un div a la izq y otro a la der */
+        }
+
+        .div1, .div2 {
+        width: 120px; /*Ancho*/
+        height: 120px;  /*Alto*/
+        display: flex;
+        justify-content: center; /*Centra horizontalmente el contenido dentro del div*/
+        align-items: center; /*Centra verticalmente el contenido dentro del div*/
+        font-weight: bold;
+        }
+
+        .div1 {
+        background-color: pink;
+        }
+
+        .div2 {
+        background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+  <div class="div1">Div2</div>
+  <div class="div2">Div1</div>
+</body>
+</html>
