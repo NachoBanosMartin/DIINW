@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 3</title>
-    <style>
-      body{
-        padding: 20px;
-        border: 1px solid #ddd;
-        
-      }
-      .div1, .div2{
-        display: flex;
-        justify-content: center; /*Centra horizontalmente el contenido dentro del div*/
-        align-items: center;
-      }
-
-      .div1{
-        width: 120px; /*Ancho*/
-        height: 120px;  /*Alto*/
-        background-color: pink;
-        margin-left: auto;
-      }
-
-      .div2{
-        width: 60px;
-        height: 30px;
-        background-color: cyan;
-      }
-
-      .texto{
-        background-color: orange;
-        margin-right: 120px;
-        margin-top: -120px;  
-        text-align: left;  
-      }
-
-      div[style*="clear"] {
-        margin-top: 60px;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .texto{
+      background-color: orange;
+    }
+    .div1{
+      background-color: pink;
+      height: 150px;
+      width: 150px;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .div2{
+      background-color: aqua;
+      height: 30px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
+
 <body>
   <div class="div1">Div1</div>
-  <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Sit ipsum possimus eius cum a hic excepturi molestias. 
-                     Neque saepe fugit, placeat dolor autem porro voluptatibus 
-                     numquam iste reprehenderit molestias ea.</div>
+  <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum
+    possimus eius cum a hic excepturi molestias. Neque saepe fugit, placeat dolor autem
+    porro voluptatibus numquam iste reprehenderit molestias ea.</div>
   <div class="div2">Div2</div>
   <div style="clear: both;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Rem corporis perferendis eos facilis, commodi assumenda 
-                            et sequi eligendi iure? Officiis tempora labore id expedita 
-                            asperiores aperiam sint doloribus facere qui</div>
+    Rem corporis perferendis eos facilis, commodi assumenda et sequi eligendi iure?
+    Officiis tempora labore id expedita asperiores aperiam sint doloribus facere qui</div>
 </body>
+
 </html>

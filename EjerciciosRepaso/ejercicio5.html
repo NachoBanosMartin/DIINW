@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 5</title>
-    <style>
-        body {
-        display: flex; /* Esto hace que los divs se coloquen en fila */
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        border: 1px solid #ddd;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 10px;
+      border: 1px solid #ddd;
+      display: flex; 
+    }
 
-        div {
-        padding: 20px;
-        font-weight: bold;
-        text-align: center;
-        box-sizing: border-box; /* Crucial para que el padding no afecte el ancho total */
-        width: 25%
-        }
+    .div1, .div2, .div3, .div4{
+      width: 20%;
+      padding: 20px;
+      font-weight: bold;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    .div1{
+      background-color: aqua;
+      float: left;
+    }
+    .div2{
+      background-color: yellow;
+            float: left;
 
-        .div1 {
-        background-color: #5BC0EB;
-        }
+    }
+    .div3{
+      background-color: orange;
+            float: left;
 
-        .div2 {
-        background-color: #FDE74C;
-        }
+    }
+    .div4{
+      background-color: blue;
+            float: left;
 
-        .div3 {
-        background-color: #F87D56;
-        }
-
-        .div4 {
-        background-color: #5D9CEC;
-        }
-    </style>
+    }
+  </style>
 </head>
 <body>
   <div class="div1">Div1</div>
