@@ -9,22 +9,15 @@
     .container {
       padding: 10px;
       overflow: auto;
-      /* contiene los floats */
       border: 1px solid #ddd;
     }
 
-    .div1,
-    .div2,
-    .div3 {
-      width: 120px;
-      /*Ancho*/
-      height: 120px;
-      /*Alto*/
+    .div1,.div2,.div3 {
+      width: 120px;      /*Ancho*/
+      height: 120px;      /*Alto*/
       display: flex;
-      justify-content: center;
-      /*Centra horizontalmente el contenido dentro del div*/
+      justify-content: center;      
       align-items: center;
-      /*Centra verticalmente el contenido dentro del div*/
     }
 
     .div1 {
@@ -34,6 +27,7 @@
 
     .div2 {
       background-color: cyan;
+      float: left;
     }
 
     .div3 {
