@@ -1,0 +1,18 @@
+body{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+img{
+    width: 25%;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";        /* Asegura que el pseudo-elemento se renderice */
+    clear: both;        /* Limpia flotados a izquierda y derecha */
+    display: table;     /* Crea un nuevo contexto de formato de bloque */
+}
+
+.clearfix{
+    display: flow-root;
+}

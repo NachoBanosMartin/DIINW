@@ -1,0 +1,28 @@
+.container {
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid #ddd;
+  }
+
+  .div1,.div2,.div3 {
+    width: 120px;      /*Ancho*/
+    height: 120px;      /*Alto*/
+    display: flex;
+    justify-content: center;      
+    align-items: center;
+  }
+
+  .div1 {
+    background-color: pink;
+    float: right;
+  }
+
+  .div2 {
+    background-color: cyan;
+    float: left;
+  }
+
+  .div3 {
+    background-color: orange;
+    float: left;
+  }

@@ -1,0 +1,33 @@
+body{
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex; 
+  }
+
+  .div1, .div2, .div3, .div4{
+    width: 25%;
+    padding: 20px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .div1{
+    background-color: aqua;
+    float: left;
+  }
+  .div2{
+    background-color: yellow;
+          float: left;
+
+  }
+  .div3{
+    background-color: orange;
+          float: left;
+
+  }
+  .div4{
+    background-color: blue;
+          float: left;
+
+  }

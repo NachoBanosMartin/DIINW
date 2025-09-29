@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 1</title>
-  <style>
-  .container {
+.container {
     padding: 10px;
     border: 1px solid #ddd;
     overflow: auto; /* contiene los floats */
@@ -26,12 +19,3 @@
     background: cyan; 
     float: right; 
   }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="div1">Div1</div>
-    <div class="div2">Div2</div>
-  </div>
-</body>
-</html>
