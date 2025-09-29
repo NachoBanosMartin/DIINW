@@ -15,14 +15,19 @@
   .div1 {
     background-color: pink;
     float: right;
+    padding: 50px;
   }
 
   .div2 {
     background-color: cyan;
     float: left;
+    padding: 50px;
+
   }
 
   .div3 {
     background-color: orange;
     float: left;
+    padding: 50px;
+
   }

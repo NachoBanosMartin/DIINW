@@ -7,18 +7,12 @@ body{
   }
   .div1{
     background-color: pink;
-    height: 150px;
-    width: 150px;
+    padding: 50px;
     float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }
   .div2{
     background-color: aqua;
-    height: 30px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
+    float: left;
   }

@@ -12,10 +12,20 @@
     font-weight: bold;
   }
   .div1 { 
+    padding: 50px;
     background: pink; 
     float: left; 
   }
   .div2 { 
+    padding: 50px;
     background: cyan; 
     float: right; 
+  }
+  .clearfix::after {
+    content: "";        /* Asegura que el pseudo-elemento se renderice */
+    clear: both;        /* Limpia flotados a izquierda y derecha */
+    display: table;     /* Crea un nuevo contexto de formato de bloque */
+  }
+  .clearfix{
+    display: flow-root;
   }

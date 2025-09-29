@@ -11,8 +11,7 @@ img{
     content: "";        /* Asegura que el pseudo-elemento se renderice */
     clear: both;        /* Limpia flotados a izquierda y derecha */
     display: table;     /* Crea un nuevo contexto de formato de bloque */
-}
-
-.clearfix{
+  }
+  .clearfix{
     display: flow-root;
-}
+  }
