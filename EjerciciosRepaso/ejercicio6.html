@@ -11,26 +11,37 @@
             border: 1px solid #ddd;
         }
         img{
-            margin-top: 10px;
             width: 25%;
-            padding: 10px;
             float: left;
         }
 
+        .clearfix::after {
+            content: "";        /* Asegura que el pseudo-elemento se renderice */
+            clear: both;        /* Limpia flotados a izquierda y derecha */
+            display: table;     /* Crea un nuevo contexto de formato de bloque */
+        }
+
+        .clearfix{
+            display: flow-root;
+        }
 
     </style>
 </head>
 
 <body>
-    <img src="https://picsum.photos/id/1025/600/400" alt="">
-    <div class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Harum ipsam consectetur odio commodi rerum dicta eveniet fugiat vel 
-        laudantium quis veniam amet, voluptate aliquam esse vitae eligendi 
-        animi sapiente ratione.</div>
-    <div class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Harum ipsam consectetur odio commodi rerum dicta eveniet fugiat vel 
-        laudantium quis veniam amet, voluptate aliquam esse vitae eligendi 
-        animi sapiente ratione.</div>
+    <div class="contenedor">
+        <img src="https://picsum.photos/id/1025/300/200" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis voluptas voluptates 
+            illo error! Asperiores magnam quo atque, cupiditate at fuga laboriosam, nemo ipsum quisquam
+            earum quibusdam reiciendis, illo ut.</p>
+    </div>
+      
+    <p style="clear: both;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis
+        voluptas voluptates illo error! Asperiores magnam quo atque, cupiditate at fuga laboriosam, 
+        nemo ipsum quisquam earum quibusdam reiciendis, illo ut.</p>
+    <p>Itaque ut delectus nobis perferendis numquam saepe laboriosam 
+        cumque odio reiciendis! Minus, fugiat eaque impedit dolor ab quasi veritatis ex voluptatibus 
+        iure nostrum sint debitis doloremque. Adipisci expedita repellat quia.</p>
 </body>
 
 </html>
