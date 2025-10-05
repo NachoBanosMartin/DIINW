@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .div1{
+            background-color: pink;
+            padding: 50px;
+            float: right;
+        }
+
+        .div2{
+            background-color: lightblue;
+            padding: 50px;
+            float: left;
+        }
+
+        .div3{
+            background-color: orangered;
+            padding: 50px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div1">Div 1</div>
+    </div>
+</body>
+</html>
