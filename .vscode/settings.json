@@ -27,5 +27,6 @@
         "pantalla",
         "sino",
         "verticalmente"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
