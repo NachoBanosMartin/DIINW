@@ -5,65 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Responsive Design (III)</title>
-    <link rel="stylesheet" href="columnas.css">
-
     <style>
         * {
-        box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         header {
-        background-color: lightcoral;
-        padding: 20px;
-        text-align: center;
-        color: white;
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+            color: white;
         }
 
         nav {
-        background-color: #4CAF50;
-        padding: 15px;
-        color: white;
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
         }
 
         aside {
-        background-color: lightblue;
-        padding: 20px;
-        min-height: 200px;
+            background-color: lightblue;
+            padding: 20px;
+            min-height: 200px;
         }
 
         .sidebar-left {
-        background-color: #FFE5B4;
+            background-color: #FFE5B4;
         }
 
         .sidebar-right {
-        background-color: #E6E6FA;
+            background-color: #E6E6FA;
         }
 
         article {
-        background-color: lightgreen;
-        padding: 20px;
-        margin-bottom: 10px;
-        min-height: 150px;
+            background-color: lightgreen;
+            padding: 20px;
+            margin-bottom: 10px;
+            min-height: 150px;
         }
 
         .banner {
-        background-color: #9370DB;
-        padding: 15px;
-        text-align: center;
-        color: white;
-        font-weight: bold;
+            background-color: #9370DB;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
         }
 
         footer {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
 
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
+        [class*="col-"] {
+            float: left;
+            width: 100%;
+            padding: 20px;
+        }
 
-        @media (min-width: 480) {
+        @media (min-width: 550px) {
             .col-xs-1 { width: 8.33%; }
             .col-xs-2 { width: 16.66%; }
             .col-xs-3 { width: 25%; }
@@ -78,7 +86,7 @@
             .col-xs-12 { width: 100%; }
         }
 
-        @media (min-width: 600) {
+        @media (min-width: 700px) {
             .col-sm-1 { width: 8.33%; }
             .col-sm-2 { width: 16.66%; }
             .col-sm-3 { width: 25%; }
@@ -93,7 +101,7 @@
             .col-sm-12 { width: 100%; }
         }   
 
-        @media (min-width: 750) {
+        @media (min-width: 850px) {
             .col-md-1 { width: 8.33%; }
             .col-md-2 { width: 16.66%; }
             .col-md-3 { width: 25%; }
@@ -108,7 +116,7 @@
             .col-md-12 { width: 100%; }
         }
 
-        @media (min-width: 900px) {
+        @media (min-width: 950px) {
             .col-lg-1 { width: 8.33333%; }
             .col-lg-2 { width: 16.66667%; }
             .col-lg-3 { width: 25%; }
@@ -130,22 +138,35 @@
     <header>HEADER - LOGO Y TÍTULO PRINCIPAL</header>
     <div class="row">
 
-        <div class="col-xs-12 col-ms-12 col-md-1 col-lg-1">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
             <aside class="sidebar-left">SIDEBAR IZQUIERDO<br>Menú secundario</aside>
         </div>
 
-        <div class="col-xs-12 col-ms-12 col-md-1 col-lg-1">
+        <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8">
             <div class="banner">BANNER SECUNDARIO</div>
-
-            <article>ARTÍCULO 1<br>Lorem ipsum</article>
-            <article>ARTÍCULO 2<br>Lorem ipsum</article>
-            <article>ARTÍCULO 3<br>Lorem ipsum</article>
-            <article>ARTÍCULO 4<br>Lorem ipsum</article>
-            <article>ARTÍCULO 5<br>Lorem ipsum</article>
-            <article>ARTÍCULO 6<br>Lorem ipsum</article>
+        
+            <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <article>ARTÍCULO 1<br>Lorem ipsum</article>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <article>ARTÍCULO 2<br>Lorem ipsum</article>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <article>ARTÍCULO 3<br>Lorem ipsum</article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <article>ARTÍCULO 4<br>Lorem ipsum</article>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <article>ARTÍCULO 5<br>Lorem ipsum</article>
+                    </div>
+                    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
+                        <article>ARTÍCULO 6<br>Lorem ipsum</article>
+                    </div>
+            </div>
         </div>
-
-        <div class="col-xs-12 col-ms-12 col-md-1 col-lg-1">       
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-2">       
             <aside class="sidebar-right">SIDEBAR DERECHO<br>Publicidad<br>Widget social</aside>
         </div>
     </div>

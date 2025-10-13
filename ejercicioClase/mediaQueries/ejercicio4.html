@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .topnav{
+            background-color:  #333;
+        }
+
+        .topnav a{
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 20px; 
+            display: block;
+        }
+
+        .topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        @media (width > 600px){
+            .topnav{
+                display: flow-root;
+            }
+        }
+
+        .topnav a {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav clearfix">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+    </div>
+</body>
+</html>
