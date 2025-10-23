@@ -1,0 +1,14 @@
+
+flex-direction: column;
+flex-direction: column-reverse;
+justify-content: end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+align-items: flex-end;
+
+
+
+
+
+
