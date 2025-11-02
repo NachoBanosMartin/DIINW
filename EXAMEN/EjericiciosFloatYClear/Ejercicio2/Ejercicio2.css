@@ -1,0 +1,23 @@
+.div1{
+    background-color: pink;
+    float: right;
+    padding: 50px;
+}
+
+.div2{
+    background-color: aqua;
+    float: left;
+    padding: 50px;
+}
+
+.div3{
+    background-color: orange;
+    float: left;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

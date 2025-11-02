@@ -1,0 +1,17 @@
+img{
+    float: left;
+    width: 20%;
+}
+
+.texto {
+    float: right;
+    width: 80%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

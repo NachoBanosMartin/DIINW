@@ -1,0 +1,30 @@
+.flotante{
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;  /*El ancho y alto incluyen el contenido, el padding y el borde.*/
+}
+
+.flotante.div1{
+    background-color: aqua;
+}
+
+.flotante.div2{
+    background-color: bisque;
+}
+
+.flotante.div3{
+    background-color: orange;
+}
+
+.flotante.div4{
+    background-color: blueviolet;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

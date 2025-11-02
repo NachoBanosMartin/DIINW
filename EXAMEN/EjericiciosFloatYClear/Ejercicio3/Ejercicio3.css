@@ -1,0 +1,22 @@
+.div1{
+    background-color: pink;
+    padding: 50px;
+    float: right;
+}
+
+.div2{
+    background-color: aqua;
+    padding: 10px;
+    float: left;
+}
+
+.texto{
+    background-color: orange;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

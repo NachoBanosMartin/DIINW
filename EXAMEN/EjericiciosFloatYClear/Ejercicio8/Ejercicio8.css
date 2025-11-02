@@ -1,0 +1,41 @@
+      *{
+            box-sizing: border-box;
+        }
+        #footer{
+            background-color: grey;
+            font-weight: bold;
+            padding: 30px;
+            
+        }
+
+        .titulo_imagen{
+            text-align: center;
+        }
+
+        .img-container{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .img-container img{
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 2 / 1;
+            object-fit: cover;
+        }
+
+        .f-right{
+            float: right;
+        }
+
+        .f-left{
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }

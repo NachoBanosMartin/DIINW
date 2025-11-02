@@ -1,0 +1,43 @@
+:root{
+    --header-bg: black;
+    --header-color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+/*HEADER*/
+
+header{
+    position: sticky;  /*Hace que el header se quede “pegado” al borde superior cuando haces scroll*/
+    top: 0;
+    z-index: 999;  /*Se pone cuando hay elementos superpuestos*/
+    background-color: black;
+    padding: 15px;
+}
+
+header a.logo{
+    text-decoration: none;
+    color: black;
+}
+
+header a.logo span{
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header a.logo img {
+  width: 25px;
+  vertical-align: middle;
+}
