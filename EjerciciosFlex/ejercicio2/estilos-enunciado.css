@@ -8,22 +8,26 @@ div {
   height: 500px;
   border: 4px solid black;
   display: flex;  /*Primero*/
- }
+}
 
 /***************** Contenedor izquierda *****************/
 #container-izq {
   border: 4px solid red;
   width: 20%;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 #container-izq #container-izq-1 {
   width: 50px;
   height: 50px;
+  align-self: center;
 }
 
 #container-izq #container-izq-2 {
   border-width: 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #container-izq #container-izq-3 {
@@ -36,7 +40,11 @@ div {
   height: 50px;
 }
 
-#container-izq #container-izq-5 {}
+#container-izq #container-izq-5 {
+  flex-wrap: wrap-reverse;
+  gap: 5px;
+  display: flex;
+}
 
 #container-izq #container-izq-6 {
   background-color: lightcoral;
@@ -61,19 +69,27 @@ div {
   border: 4px solid green;
   width: 50%;
   flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #container-centro #container-centro-1 {
   height: 100px;
   border-width: 0px;
+  justify-content: space-between;
+  display: flex;
 }
 
 #container-centro #container-centro-2 {
   height: 100px;
+  
 }
 
 #container-centro #container-centro-3 {
   border: 0px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 #container-centro #container-centro-4 {
@@ -99,12 +115,14 @@ div {
   width: 50px;
   height: 50px;
   background-color: lightcoral;
+  flex-grow: 1;
 }
 
 #container-centro #container-centro-9 {
   background-color: lightblue;
   width: 50px;
   height: 50px;
+  
 }
 
 /***************** Contenedor derecha *****************/
@@ -112,6 +130,9 @@ div {
   border: 4px solid blue;
   width: 30%;
   flex-grow: 2;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
 }
 
 #container-dcha #container-dcha-1 {
@@ -122,12 +143,16 @@ div {
 #container-dcha #container-dcha-2 {
   background-color: lightcoral;
   border: 0px;
+  order: 1;
+  /**********************************/
 }
 
 #container-dcha #container-dcha-3 {
   background-color: lightgreen;
   height: 50px;
   border: 0px;
+  display: flex;
+
 }
 
 #container-dcha #container-dcha-4 {
@@ -140,6 +165,10 @@ div {
   height: 50px;
 }
 
-#container-dcha #container-dcha-6 {}
+#container-dcha #container-dcha-6 {
+flex-grow: 1;
+}
 
-#container-dcha #container-dcha-7 {}
+#container-dcha #container-dcha-7 {
+flex-grow: 1;
+}
