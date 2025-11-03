@@ -38,6 +38,25 @@ header a.logo span{
 }
 
 header a.logo img {
-  width: 25px;
-  vertical-align: middle;
+    width: 25px;
+    vertical-align: middle;
+}
+
+header a.login{
+    border-radius: 3px;
+    border: 2px solid white;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+header a.login:hover{
+    color: var(--header-bg);
+    background-color: var(--header-color);
+}
+
+/*MAIN*/
+
+main .title{
+    text-align: center;
 }
