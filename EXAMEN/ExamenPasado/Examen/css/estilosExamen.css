@@ -57,6 +57,36 @@ header a.login:hover{
 
 /*MAIN*/
 
+main{
+    background-color: #eee;
+    padding: 20px;
+}
+
 main .title{
+    /*Elimina cualquier espacio externo alrededor del elemento .title.*/
+    background-color: white;
     text-align: center;
+    padding: 10px;    
+}
+
+main .img-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+main .img-container .img-title{
+    padding: 3px 6px;
+    font-size: 16pt;
+    position: relative;
+    margin: 0 auto;
+    top: -20px;
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
