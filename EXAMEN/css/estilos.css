@@ -1,0 +1,72 @@
+:root {
+    --header-bg: #2c3e50;
+    --tipografia: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.container{
+    padding: 10px;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--header-bg, #2c3e50);
+    padding: 15px;
+    font-family: var(--tipografia, Arial, Helvetica, sans-serif);
+}
+
+header a.logo {
+    text-decoration: none;
+    height: 45px;
+}
+
+header a.logo span {
+    color: white;
+    padding: 5px;
+}
+
+header a.logo img {
+    height: 45px;
+    vertical-align: middle;
+}
+
+header .boton{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header a.boton:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* MAIN */
+
+main .title{
+    text-align: center;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+main .img-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
