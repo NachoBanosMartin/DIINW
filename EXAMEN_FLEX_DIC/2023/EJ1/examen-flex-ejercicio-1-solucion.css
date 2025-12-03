@@ -3,7 +3,7 @@
 /*********************************/
 .ej1 {
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: flex-end;
 }
 
 .ej1 :nth-child(1) {
@@ -23,11 +23,12 @@
 /*********************************/
 .ej2 {
     flex-wrap: wrap;
-    align-items: center;
     align-content: center;
 }
 
-.ej2 :nth-child(1) {}
+.ej2 :nth-child(1) {
+    order: 1;
+}
 
 .ej2 :nth-child(2) {}
 
@@ -35,7 +36,9 @@
 
 .ej2 :nth-child(4) {}
 
-.ej2 :nth-child(5) {}
+.ej2 :nth-child(5) {
+    order: 2;
+}
 
 /*********************************/
 /********** Ejercicio 3 **********/
@@ -60,74 +63,126 @@
 /*********************************/
 /********** Ejercicio 4 **********/
 /*********************************/
-.ej4 {}
+.ej4 {
+    align-items: center;
+}
 
-.ej4 :nth-child(1) {}
+.ej4 :nth-child(1) {
+    flex-grow: 1;
+}
 
 .ej4 :nth-child(2) {}
 
-.ej4 :nth-child(3) {}
+.ej4 :nth-child(3) {
+    flex-grow: 3;
+    align-self: flex-end;
+}
 
-.ej4 :nth-child(4) {}
+.ej4 :nth-child(4) {
+    display: none;
+}
 
-.ej4 :nth-child(5) {}
+.ej4 :nth-child(5) {
+    display: none;
+}
 
 /*********************************/
 /********** Ejercicio 5 **********/
 /*********************************/
-.ej5 {}
+.ej5 {
+    justify-content: space-around;
+}
 
 .ej5 :nth-child(1) {}
 
-.ej5 :nth-child(2) {}
+.ej5 :nth-child(2) {
+    height: auto;
+}
 
 .ej5 :nth-child(3) {}
 
-.ej5 :nth-child(4) {}
+.ej5 :nth-child(4) {
+    display: none;
+}
 
-.ej5 :nth-child(5) {}
+.ej5 :nth-child(5) {
+    display: none;
+}
 
 /*********************************/
 /********** Ejercicio 6 **********/
 /*********************************/
-.ej6 {}
+.ej6 {
+    align-items: flex-end;
+}
 
-.ej6 :nth-child(1) {}
+.ej6 :nth-child(1) {
+    margin-right: auto;
+}
 
 .ej6 :nth-child(2) {}
 
 .ej6 :nth-child(3) {}
 
-.ej6 :nth-child(4) {}
+.ej6 :nth-child(4) {
+    display: none;
+}
 
-.ej6 :nth-child(5) {}
+.ej6 :nth-child(5) {
+    display: none;
+}
 
 /*********************************/
 /********** Ejercicio 7 **********/
 /*********************************/
-.ej7 {}
+.ej7 {
+    flex-direction: column;
+}
 
-.ej7 :nth-child(1) {}
+.ej7 :nth-child(1) {
+    align-self: flex-end;
+}
 
-.ej7 :nth-child(2) {}
+.ej7 :nth-child(2) {
+    width: auto;
+}
 
-.ej7 :nth-child(3) {}
+.ej7 :nth-child(3) {
+    align-self: center;
+}
 
-.ej7 :nth-child(4) {}
+.ej7 :nth-child(4) {
+    display: none;
+}
 
-.ej7 :nth-child(5) {}
+.ej7 :nth-child(5) {
+    display: none;
+}
 
 /*********************************/
 /********** Ejercicio 8 **********/
 /*********************************/
-.ej8 {}
+.ej8 {
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
 
-.ej8 :nth-child(1) {}
+.ej8 :nth-child(1) {
+    flex-grow: 1;
+}
 
-.ej8 :nth-child(2) {}
+.ej8 :nth-child(2) {
+    flex-grow: 1;
+}
 
-.ej8 :nth-child(3) {}
+.ej8 :nth-child(3) {
+    flex-grow: 1;
+}
 
-.ej8 :nth-child(4) {}
+.ej8 :nth-child(4) {
+    display: none;
+}
 
-.ej8 :nth-child(5) {}
+.ej8 :nth-child(5) {
+    display: none;
+}
