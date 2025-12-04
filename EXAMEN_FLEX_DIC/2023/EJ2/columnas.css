@@ -4,63 +4,45 @@
     flex-wrap: wrap;
 }
 
-[class*="col-"] {
-    width: 100%;   /* En móvil, todas las columnas ocupan el ancho completo */
-    padding: 15px; /* Espaciado interno */
-    border: 1px solid #999; /* Solo si quieres ver las columnas */
-}
-
 .col {
     padding: 15px;
     flex: 1 1 0;
 }
 
-.row > * {
-    border: 1px solid #999;
+[class*="col-"] {
+    width: 100%;   /* En móvil, todas las columnas ocupan el ancho completo */
+    padding: 15px; /* Espaciado interno */
+    flex: 0 0 auto;
 }
-
-.fila-1 :first-child {
-    /* Para móviles, la zona derecha debe aparecer antes que la izquierda, así que damos un orden mayor que 0 al otro elemento */
-    order: 1;
-}
-
 
 /* TABLETS */
 @media (min-width: 600px) {
-    .fila-1 :first-child {
-        order: 0;
-    }
-    .col-t-1 { width: 8.33%; }
-    .col-t-2 { width: 16.66%; }
-    .col-t-3 { width: 25%; }
-    .col-t-4 { width: 33.33%; }
-    .col-t-5 { width: 41.66%; }
-    .col-t-6 { width: 50%; }
-    .col-t-7 { width: 58.33%; }
-    .col-t-8 { width: 66.66%; }
-    .col-t-9 { width: 75%; }
-    .col-t-10 { width: 83.33%; }
-    .col-t-11 { width: 91.66%; }
-    .col-t-12 { width: 100%; }
+    .col-sm-1 { width: 8.33%; }
+    .col-sm-2 { width: 16.66%; }
+    .col-sm-3 { width: 25%; }
+    .col-sm-4 { width: 33.33%; }
+    .col-sm-5 { width: 41.66%; }
+    .col-sm-6 { width: 50%; }
+    .col-sm-7 { width: 58.33%; }
+    .col-sm-8 { width: 66.66%; }
+    .col-sm-9 { width: 75%; }
+    .col-sm-10 { width: 83.33%; }
+    .col-sm-11 { width: 91.66%; }
+    .col-sm-12 { width: 100%; }
 }
 
 /* ESCRITORIO */
 @media (min-width: 900px) {
-    .container {
-        max-width: 1200px; /* más flexible que width fijo */
-        margin: 0 auto;
-    }
-
-    .col-e-1 { width: 8.33%; }
-    .col-e-2 { width: 16.66%; }
-    .col-e-3 { width: 25%; }
-    .col-e-4 { width: 33.33%; }
-    .col-e-5 { width: 41.66%; }
-    .col-e-6 { width: 50%; }
-    .col-e-7 { width: 58.33%; }
-    .col-e-8 { width: 66.66%; }
-    .col-e-9 { width: 75%; }
-    .col-e-10 { width: 83.33%; }
-    .col-e-11 { width: 91.66%; }
-    .col-e-12 { width: 100%; }
+    .col-md-1 { width: 8.33%; }
+    .col-md-2 { width: 16.66%; }
+    .col-md-3 { width: 25%; }
+    .col-md-4 { width: 33.33%; }
+    .col-md-5 { width: 41.66%; }
+    .col-md-6 { width: 50%; }
+    .col-md-7 { width: 58.33%; }
+    .col-md-8 { width: 66.66%; }
+    .col-md-9 { width: 75%; }
+    .col-md-10 { width: 83.33%; }
+    .col-md-11 { width: 91.66%; }
+    .col-md-12 { width: 100%; }
 }
