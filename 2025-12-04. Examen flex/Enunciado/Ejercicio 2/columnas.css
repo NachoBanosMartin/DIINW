@@ -15,8 +15,12 @@
     flex: 0 0 auto;
 }
 
+.row > * {
+    border: 1px solid #999;
+}
+
 /* MÓVILES */
-@media (min-width: 400px) {
+@media (min-width: 600px) {
     .col-sm-1 { width: 8.33%; }
     .col-sm-2 { width: 16.66%; }
     .col-sm-3 { width: 25%; }
@@ -32,7 +36,7 @@
 }
 
 /* TABLETS */
-@media (min-width: 600px) {
+@media ((min-width: 600px) and (max-width: 900px)) {
     .col-md-1 { width: 8.33%; }
     .col-md-2 { width: 16.66%; }
     .col-md-3 { width: 25%; }

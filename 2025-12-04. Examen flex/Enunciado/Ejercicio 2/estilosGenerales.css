@@ -1,0 +1,23 @@
+/********** Estilos generales **********/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    background-color: beige;
+    border: 1px solid #555;
+}
+
+.container h2 {
+    font-size: 1.25rem;
+}
+
+.container p {
+    margin: 0 0 0.5em 0;
+}
